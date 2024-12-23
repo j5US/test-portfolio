@@ -1,5 +1,5 @@
 // import { useState } from "react"
-import { HashRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 // import DemoGrid from "./DemoGrid"
 // import NavBar from "./components/NavBar"
 import AboutPage from "./pages/AboutPage";
@@ -11,7 +11,7 @@ function App() {
 
   return (
     <div className="size-full flex flex-col items-center">
-      <Router>
+      <Router basename="/test-portfolio">
         <ScrollToTop/>
         <Routes>
           {/* Define routes using the "element" prop and JSX */}
